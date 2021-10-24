@@ -1,0 +1,123 @@
+\documentclass[t,fleqn]{beamer}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{url}\urlstyle{tt}
+
+\title[Answer Set Programming]{Answer Set Programming: From Theory to Practice}
+\author[Potassco]{Roland Kaminski \and Javier Romero \and Torsten Schaub \and Philipp Wanko}
+\institute[KRR@UP]{University of Potsdam\\\bigskip\bigskip\includegraphics[scale=0.07]{potassco_logo_lightblue}}
+\date{}
+
+\usetheme{Pittsburgh}
+\useinnertheme{rectangles}
+\mode<beamer>{\usecolortheme{albatross}}
+\mode<beamer>{\setbeamercolor{alerted text}{fg=yellow}}
+\mode<handout>{\usecolortheme{seagull}}
+\mode<handout>{\setbeamercolor{alerted text}{fg=blue}}
+\useoutertheme{infolines}
+\setbeamertemplate{navigation symbols}{\vspace{-5pt}} % to lower the logo
+\setbeamercovered{dynamic}
+\setbeamertemplate{bibliography item}[text]
+
+\AtBeginPart{
+  \begin{frame}{\insertpart: Overview}
+    \vfill
+    \tableofcontents[hideallsubsections]
+  \end{frame}
+}
+\AtBeginSection{
+  \begin{frame}{Outline}
+    \vfill
+    \tableofcontents[currentsection,hideallsubsections]
+  \end{frame}
+}
+\AtBeginSubsection{
+  \begin{frame}{Outline}
+    \vfill
+    \tableofcontents[currentsubsection]
+  \end{frame}
+}
+
+% -- styles --------------------------------------------------------------
+\usepackage[ruled,vlined]{algorithm2e}
+\SetAlFnt{\small}
+\setlength{\algomargin}{2ex}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows,chains,positioning,automata,decorations,shapes,calc,matrix,fit,backgrounds} % CHECK!!
+\usepackage{pgfpages}
+\usepackage{tikz-uml}
+
+\usepackage[normalem]{ulem}
+
+\usepackage{chessboard}
+
+\usepackage{listings}
+\lstset{basicstyle=\ttfamily,escapechar=\%,escapeinside={\#(}{\#)}}
+
+\usepackage{multimedia}
+
+% -- macros --------------------------------------------------------------
+\input{macros/semantics}
+\input{macros/syntax}
+\input{macros/logics}
+\input{macros/listings}
+\input{macros/systems}
+\newcommand{\RF}[1]{\ensuremath{\mathit{RF}(#1)}}
+\newcommand{\tuple}[1]{\ensuremath{\langle #1 \rangle}}
+% \input{asp-slides/macro}
+% \renewcommand{\naf}[1]{\ensuremath{\neg #1}} % {\ensuremath{{\sim\!\!{#1}}}}
+
+\def\Pi{P}
+
+\usepackage{pifont}
+\newcommand{\itarrow}{{\Pisymbol{pzd}{229}}}
+% \newcommand{\ithook}{{\Pisymbol{pzd}{52}}}
+% \newcommand{\itcross}{{\Pisymbol{pzd}{56}}}
+\newcommand{\ithand}{{\Pisymbol{pzd}{43}}}
+\newcommand{\OK}{\mbox{\textcolor{green}{\Pisymbol{pzd}{52}}}}
+\newcommand{\KO}{\mbox{\textcolor{red}{\Pisymbol{pzd}{56}}}}
+\newcommand{\BigOK}{\makebox(0,0){\Huge\textcolor{green}{\Pisymbol{pzd}{52}}}}
+\newcommand{\BigKO}{\makebox(0,0){\Huge\textcolor{red}{\Pisymbol{pzd}{56}}}}
+
+\makeatletter\lst@AddToHook{OnEmptyLine}{\vspace{-0.7\baselineskip}}\makeatother
+
+\begin{document}
+% ----------------------------------------------------------------------
+\frame{\titlepage}
+\pgfdeclareimage[height=0.5cm]{potasscologo}{potassco_logo_lightblue}
+\logo{\pgfuseimage{potasscologo}}
+% ----------------------------------------------------------------------
+\begin{frame}{Outline}
+  \bigskip
+  \begin{enumerate}
+  \item Introduction
+  \item Foundations
+  \item Grounding
+  \item Solving
+  \item Modeling
+  \item Engineering
+  \item Applications
+  \end{enumerate}
+\end{frame}
+% ----------------------------------------------------------------------
+\input{./motivation}
+\input{./foundations}
+\end{document}
+\input{./grounding}
+\input{./solving}
+\input{./modeling}
+\input{./engineering}
+\input{./applications}
+\input{./summary}
+% ---------------------------------------------------------------------
+\bibliography{krr,procs}
+\bibliographystyle{plain}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% TeX-PDF-mode: t
+%%% End:

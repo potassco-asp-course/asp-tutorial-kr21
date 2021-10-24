@@ -1,0 +1,33 @@
+[submodule "include/logos"]
+	path = include/logos
+	url = https://github.com/krr-up/logos.git
+[submodule "include/bibliography"]
+	path = include/bibliography
+	url = https://github.com/krr-up/bibliography.git
+[submodule "include/macros"]
+	path = include/macros
+	url = https://github.com/krr-up/asp-macros.git
+[submodule "include/motivation"]
+	path = include/motivation
+	url = ../motivation
+[submodule "include/introduction"]
+	path = include/introduction
+	url = ../introduction
+[submodule "include/modeling"]
+	path = include/modeling
+	url = ../modeling
+[submodule "include/meta-encoding"]
+	path = include/meta-encoding
+	url = ../meta-encoding
+[submodule "include/solving"]
+	path = include/solving
+	url = ../solving
+[submodule "include/multi-shot-solving"]
+	path = include/multi-shot-solving
+	url = ../multi-shot-solving
+[submodule "include/theory-solving"]
+	path = include/theory-solving
+	url = ../theory-solving
+[submodule "include/heuristic-driven-solving"]
+	path = include/heuristic-driven-solving
+	url = ../heuristic-driven-solving

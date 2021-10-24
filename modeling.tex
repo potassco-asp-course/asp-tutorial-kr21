@@ -1,0 +1,80 @@
+% ----------------------------------------------------------------------
+\lecture{Modeling}{modeling}
+% ----------------------------------------------------------------------
+\part{Modeling}
+% ----------------------------------------------------------------------
+\begin{frame}{Extended syntax}
+\vfill
+\begin{center}{%
+\begin{picture}(300,120)(-150,-60)
+\put(-80,+40){\makebox(0,0){\framebox(80,20){Problem}}}
+\put(-80,-40){\makebox(0,0){\framebox(80,20){\alert{\textbf{Logic Program}}}}}
+\put(+80,+40){\makebox(0,0){\framebox(80,20){Solution}}}
+\put(+80,-40){\makebox(0,0){\framebox(80,20){Stable Models}}}
+\put(-80,+30){\vector(0,-1){60}}
+\put(-40,-40){\vector(+1,0){80}}
+\put(+80,-30){\vector(0,+1){60}}
+\put(-110,  0){\makebox(0,0){{Modeling}}}
+\put(+120,  0){\makebox(0,0){{Interpreting}}}
+\put(   0,-55){\makebox(0,0){{Solving}}}
+\end{picture}}
+\end{center}
+\end{frame}
+% ----------------------------------------------------------------------
+\input{introduction/language-constructs}
+% ----------------------------------------------------------------------
+\begin{frame}{Modeling and Interpreting}
+\vfill
+\begin{center}{%
+\begin{picture}(300,120)(-150,-60)
+\put(-80,+40){\makebox(0,0){\framebox(80,20){Problem}}}
+\put(-80,-40){\makebox(0,0){\framebox(80,20){Logic Program}}}
+\put(+80,+40){\makebox(0,0){\framebox(80,20){Solution}}}
+\put(+80,-40){\makebox(0,0){\framebox(80,20){Stable Models}}}
+\put(-80,+30){\vector(0,-1){60}}
+\put(-40,-40){\vector(+1,0){80}}
+\put(+80,-30){\vector(0,+1){60}}
+\put(-110,  0){\makebox(0,0){\alert{Modeling}}}
+\put(+120,  0){\makebox(0,0){\alert{Interpreting}}}
+\put(   0,-55){\makebox(0,0){{Solving}}}
+\end{picture}}
+\end{center}
+\end{frame}
+% ----------------------------------------------------------------------
+\section{Elaboration tolerance}
+%
+\input{modeling/elaboration-uniformity}
+% ----------------------------------------------------------------------
+\section{ASP solving process}
+%
+\input{modeling/workflow-elaboration}
+\input{modeling/color}
+% ----------------------------------------------------------------------
+\section{Methodology}
+%
+\input{modeling/methodology}
+\input{modeling/methodology-coloring}
+% ----------------------------------------------------------------------
+\section{Case studies}
+% ----------------------------------------------------------------------
+\subsection{Satisfiability}
+\input{modeling/sat}
+% ----------------------------------------------------------------------
+\subsection{Queens}
+\input{modeling/queens}
+% ----------------------------------------------------------------------
+\subsection{Traveling salesperson}
+\input{modeling/salesperson}
+% ----------------------------------------------------------------------
+\subsection{Reviewer Assignment}
+\input{modeling/reviewer}
+% ----------------------------------------------------------------------
+\subsection{Planning}
+\input{modeling/planning}
+% ----------------------------------------------------------------------
+%
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-PDF-mode: t
+%%% TeX-master: "tutorial"
+%%% End:
