@@ -31,3 +31,15 @@
 [submodule "include/heuristic-driven-solving"]
 	path = include/heuristic-driven-solving
 	url = ../heuristic-driven-solving
+[submodule "include/systems"]
+	path = include/systems
+	url = ../systems
+[submodule "include/applications"]
+	path = include/applications
+	url = ../applications
+[submodule "include/ai"]
+	path = include/ai
+	url = git@github.com:krr-up/ai.git
+[submodule "include/grounding"]
+	path = include/grounding
+	url = ../grounding
